@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html>
+        <link rel="stylesheet" href="/static/style_user_registration.css" type="text/css">
+        <form action="/user_registration" method="POST">
+        <form>
+            <div class="login">
+	            <div class="login-screen">
+		            <div class="app-title">
+                        <br>
+                        <input type="text" class="login-field" value="" placeholder="username" name="username">
+                        <label class="login-field-icon fui-user" for="login-name"></label>
+                    </div>
+                    <br>
+                    <div class="control-group">
+                        <input type="password" class="login-field" value="" placeholder="password" name="password">
+                        <br>
+                        <label class="login-field-icon fui-lock" for="login-pass">
+                        </label>
+                        <br>
+                        <input type="text" class="login-field" value="" placeholder="E-mail id" name="email">
+                        <br>
+                        <label class="login-field-icon fui-lock" for="login-email">
+                        </label>
+                        <br>
+                        <input type="number" class="login-field" value="" placeholder="aadhar card number" name="aadhar">
+                        <br>
+                        <label class="login-field-icon fui-lock" for="login-adh">
+                        </label>
+                        <br>
+                        <input type="text" class="login-field" value="" placeholder="address" name="address">
+                        <br>
+                        <label class="login-field-icon fui-lock" for="login-add">
+                        </label>
+                    </div>
+                    <br>
+                        <label class="reg">Type of registration:</label>
+                        <br><br>
+                        <select id="type_registration" name="reg">
+                            <option value="Renewal">Renewal</option>
+                            <option value="New">New Passport</option>
+                        </select>
+                        <br><br>
+                        <input type="submit" value="Register" class="btn btn-primary btn-large btn-block">
+                        <br>
+	            </div>
+            </div>
+        </body>
+        </form>
+    </html>

@@ -1,0 +1,26 @@
+<html>
+    <link rel="stylesheet" href="/static/style_display_user.css" type="text/css">
+        <form action="/police_verify" method="POST">
+            <div class="login">
+                <div class="login-screen">
+                    <div class="app-title">
+                        <h1>User Details</h1>
+                    </div>
+                    <div class="login-form">
+                        <div class="control-group">
+                            <p>{{user_id}}</p>
+                            <p>{{username}}</p>
+                            <p>{{address}}</p>
+                            <p>{{email}}</p>
+                            <p>{{aadhar}}</p>
+                        </div>
+                        <h3>Do you verify the user details</h3>
+                            <button id="yes" type="submit" name="submit_button" value="yes"> &#9989; Yes  </button>
+                            <button id="no" type="submit" name="submit_button" value="no"> &#10070; No </button>
+                        <br/><br/>
+                    </div>
+                </div>
+            </div>
+        </form>
+</html>
+

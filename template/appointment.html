@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="/static/style_appointment.css" type="text/css">
+<body>
+<form action="/issue_date" method="POST">
+<div class="login">
+<div class="login-screen">
+<div class="app-title">
+<h1>Final Verification</h1>
+</div>
+<div class="login-form">
+<div class="control-group"><br>
+<div id="type" ><b>Police Status:</b></div><div id="status">{{admin_status}}</div><br><br><br><br>
+<label for="birthday"><b>Date of Appointment:</b></label>
+<input type="date" id="birthday" name="birthday">
+<br><br><br><br>
+<input type="submit" value="proceed" name="submit_button" class="btn btn-primary btn-large btn-block">
+</div>
+</div>
+</div>
+</div>
+</form>
+</body>
+</html>

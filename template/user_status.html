@@ -1,0 +1,26 @@
+<html>
+    <link rel="stylesheet" href="/static/style_user_status.css" type="text/css">
+        <form action="/user_login" method="POST">
+            <div class="login">
+                <div class="login-screen">
+                    <div class="app-title">
+                      <h1>Status</h1>
+                    </div>
+                    <div class="login-form">
+                        <div class="control-group"><br>
+                            <div id="type" ><b>Police:</b></div>
+                            <div id="status">{{police_status}}</div>
+                            <br><br><br>
+                            <div id="type" ><b>Admin:</b></div>
+                            <div id="status">{{admin_status}}</div>
+                            <br><br><br><br>
+                            <div id="type" ><b>Collect on:</b></div>
+                            <div id="status">{{appointment}}</div>
+                            <br><br><br>
+                            <input type="submit" value="proceed" name="submit_button" class="btn btn-primary btn-large btn-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+</html>

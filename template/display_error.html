@@ -1,0 +1,21 @@
+<html>
+    <link rel="stylesheet" href="/static/style_display_error.css" type="text/css">
+        <form action="/error_screen" method="POST">
+            <div class="login">
+                <div class="login-screen">
+                    <div class="app-title">
+                        <h1>Status</h1>
+                    </div>
+                    <div class="login-form">
+                        <div class="control-group">
+                            <p>{{error}}</p>
+                        </div>
+                        <h3>Click to return to the home page</h3>
+                            <button id="return" type="submit" name="submit_button" value="return" >Return</button>
+                        <br/><br/>
+                    </div>
+                </div>
+            </div>
+        </form>
+</html>
+

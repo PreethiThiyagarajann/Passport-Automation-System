@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+return render_template("user_details_display.html", user_id=temp[0][0][0], username=user_exists[0][2],address=user_exists[0][6], email=user_exists[0][4], aadhar=user_exists[0][5])
+body {
+font-family: Arial;
+background-color: #3498DB;
+padding: 50px;
+}
+
+.login {
+margin: 20px auto;
+width: 300px;
+}
+.login-screen {
+background-color: #FFF;
+padding: 20px;
+border-radius: 5px
+}
+
+.app-title {
+text-align: center;
+color: #777;
+}
+button {
+text-align: center;
+background-color: #ECF0F1;
+border: 2px solid transparent;
+border-radius: 3px;
+font-size: 16px;
+font-weight: 200;
+padding: 10px 0;
+width: 250px;
+transition: border .5s;
+}
+
+button:focus {
+border: 2px solid #3498DB;
+box-shadow: none;
+}
+
+
+</style>
+<body>
+<form action="/test" method="post">
+<div class="login">
+<div class="login-screen">
+<div class="app-title">
+
+<button type="submit" name = "submit_button" value = "police"> Police </button> <br/><br/>
+<button type="submit" name = "submit_button" value = "admin"> Admin </button> <br/><br/>
+    <button type="submit" name = "submit_button" value = "user"> User </button> <br/><br/>
+
+</div>
+</div>
+</div>
+</form>
+</body>
+</html>
